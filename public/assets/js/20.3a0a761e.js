@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[20],{489:function(t,n,s){"use strict";s.r(n);var i=s(1),o=Object(i.a)({},(function(){var t=this._self._c;return t("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[t("p",[this._v("::: info\n春宜花，夏宜风，秋宜月，冬宜雪。")]),this._v(" "),t("p",[this._v("今日宜留言🌷\n:::")])])}),[],!1,null,null,null);n.default=o.exports}}]);

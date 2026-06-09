@@ -53,9 +53,9 @@ MySQL 连接 URL 中使用的是容器名 `mysql` 而非 IP，这是自定义 Do
 3. 双击 `package` 将 SpringBoot 打包为 jar 包
 4. 将生成的 jar 包上传到服务器
 
-![Maven 面板操作截图](/2-springboot-docker/01-maven-package.png)
+![Maven 面板操作截图](/2025-deep2/01-maven-package.png)
 
-![打包好的 jar 包](/2-springboot-docker/02-jar-file.png)
+![打包好的 jar 包](/2025-deep2/02-jar-file.png)
 
 ## 二、Linux 服务器部署 MySQL
 
@@ -197,7 +197,7 @@ CMD ["sh", "-c", "java $JAVA_OPTS -jar mywx-0.0.1-SNAPSHOT.jar"]
 
 将 jar 包和 Dockerfile 放在服务器的同一目录下：
 
-![服务器目录截图](/2-springboot-docker/03-server-dir.png)
+![服务器目录截图](/2025-deep2/03-server-dir.png)
 
 **第一步：构建镜像**
 
@@ -234,7 +234,7 @@ http://服务器IP:18418/users/list
 
 返回 JSON 数据说明后端与数据库连通正常。
 
-![访问数据库接口返回结果](/2-springboot-docker/04-api-result.png)
+![访问数据库接口返回结果](/1-esp32/1-1.png)
 
 ::: tip 端口说明
 本示例中服务器将内部 `8787` 端口映射到了对外 `18418` 端口，因此浏览器使用 `18418` 访问。
@@ -248,7 +248,7 @@ http://服务器IP:18418/show/glb/diban.glb
 
 浏览器触发文件下载，说明静态资源挂载配置生效。
 
-![访问静态资源文件结果](/2-springboot-docker/05-static-file.png)
+![访问静态资源文件结果](/2025-deep2/05-static-file.png)
 
 ## 五、整体架构总结
 
